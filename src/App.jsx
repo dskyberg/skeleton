@@ -5,6 +5,8 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Error from "./routes/Error";
 
+import Promise, { promiseLoader } from "./routes/Promise";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,6 +18,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       { path: "about", element: <About /> },
+      { path: "promise", loader: promiseLoader, element: <Promise /> },
     ],
   },
 ]);

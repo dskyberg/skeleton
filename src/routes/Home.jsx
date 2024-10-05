@@ -65,6 +65,7 @@ export default function Home() {
 
       <Typography>{greetMsg}</Typography>
       <Link href="/about">Go to About</Link>
+      <Link href="/promise">Go to Promise</Link>
     </Box>
   );
 }
